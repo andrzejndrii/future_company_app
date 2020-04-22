@@ -4,7 +4,7 @@ This project is table of companies and their incomes.
 
 Table is demo version.
 
-##Technologies
+## Technologies
 
 Project is created with:
 HTML
@@ -12,7 +12,7 @@ CSS
 JavaScript
 Django
 
-##Setup
+## Setup
 To run this project, install Django and run on the localserver. Open browser, recomended chrome and open localhost:.
 
 The table shows id, name, city and incomes of company.
