@@ -5,11 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <link rel="stylesheet" href="{% static 'tables/tables.css'%}" type="text/css">
 </head>
 <body>
 
-    <h1>Authors</h1>
-    <ul id="authors"></ul>
+    <h1><span class="blue">&lt;</span>Future<span class="blue">&gt;</span> <span class="yellow">Table</pan></h1>
+    <h2>Created with love by <a href="https://github.com/andrzejndrii" target="_blank">Andrii Nakoneshnyi</a></h2>
+    <table class="container">
+        <input type="text" class="search-input" id="searchInput" onkeyup="searchF()" placeholder="You can search">
+        <thead>
+            <tr>
+                <th><h1>ID</h1></th>
+                <th><h1>Name</h1></th>
+                <th><h1>City</h1></th>
+                <th><h1>Total<br>income</h1></th>
+                <th><h1>Average<br>income</h1></th>
+                <th><h1>Last month<br>income</h1></th>
+            </tr>
+        </thead>
+        <tbody id="tableParent">
+        </tbody>
+         <div class="pagenumbers" id="pagination"></div> 
+    </table>
 
     <script src="{% static 'tables/main.js' %}"></script>
 </body>
